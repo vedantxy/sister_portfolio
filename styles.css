@@ -1628,6 +1628,28 @@ p {
   gap: 28px;
 }
 
+.portfolio-images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 24px 24px 0;
+}
+
+.portfolio-images-grid .portfolio-image-wrapper {
+  height: 180px;
+  border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+  .portfolio-images-grid {
+    grid-template-columns: 1fr;
+    padding: 16px 16px 0;
+  }
+  .portfolio-images-grid .portfolio-image-wrapper {
+    height: 220px;
+  }
+}
+
 .portfolio-card {
   background: var(--clr-bg-card-solid);
   backdrop-filter: var(--glass-blur);
