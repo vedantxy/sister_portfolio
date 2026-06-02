@@ -3282,6 +3282,10 @@ p {
   align-items: stretch;
 }
 
+.portfolio-full-width-card {
+  grid-column: span 3;
+}
+
 .portfolio-video-wrapper {
   position: relative;
   overflow: hidden;
@@ -3305,6 +3309,9 @@ p {
     grid-column: span 2;
     grid-template-columns: 1fr;
   }
+  .portfolio-full-width-card {
+    grid-column: span 2;
+  }
   .portfolio-video-wrapper {
     border-right: none;
     border-bottom: 1px solid rgba(174, 198, 207, 0.15);
@@ -3316,6 +3323,9 @@ p {
 
 @media (max-width: 640px) {
   .portfolio-featured-card {
+    grid-column: span 1;
+  }
+  .portfolio-full-width-card {
     grid-column: span 1;
   }
 }
