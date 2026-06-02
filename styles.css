@@ -864,10 +864,10 @@ p {
 .section-label {
   font-family: 'Courier New', 'Fira Code', monospace;
   font-size: var(--fs-sm);
-  color: var(--clr-cyan);
-  letter-spacing: 1px;
+  color: #4A7A8C;
+  letter-spacing: 1.5px;
   margin-bottom: var(--space-3);
-  opacity: 0.7;
+  font-weight: 700;
 }
 
 .section-divider {
