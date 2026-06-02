@@ -491,6 +491,12 @@ p {
   padding-left: var(--space-2);
 }
 
+.nav-mobile-link.active {
+  color: var(--clr-cyan);
+  padding-left: var(--space-2);
+  font-weight: 700;
+}
+
 .nav-mobile .nav-link {
   font-size: var(--fs-md);
   padding: var(--space-3) 0;

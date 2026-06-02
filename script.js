@@ -60,7 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const sectionId = entry.target.id;
+                
+                // Update desktop links
                 navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-section') === sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+
+                // Update mobile links
+                navMobileLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('data-section') === sectionId) {
                         link.classList.add('active');
