@@ -893,11 +893,7 @@ p {
   position: relative;
 }
 
-.glass-card:hover {
-  border-color: var(--clr-cyan-glow);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(119, 136, 153, 0.06), 0 0 20px rgba(174, 198, 207, 0.08);
-}
+/* Hover effects removed */
 
 .glass-card-sm {
   background: var(--clr-bg-card-solid);
@@ -909,11 +905,7 @@ p {
   transition: border-color var(--tr-slow), transform var(--tr-slow), box-shadow var(--tr-slow);
 }
 
-.glass-card-sm:hover {
-  border-color: var(--clr-cyan-glow);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(119, 136, 153, 0.05), 0 0 16px rgba(174, 198, 207, 0.06);
-}
+/* Hover effects removed */
 
 /* ──────────────────────────────────────────────────────────────
    9. ABOUT SECTION
@@ -953,11 +945,7 @@ p {
   transition: border-color var(--tr-slow), transform var(--tr-slow), box-shadow var(--tr-slow);
 }
 
-.about-highlight-card:hover {
-  border-color: var(--clr-cyan-glow);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-glow);
-}
+/* Hover effects removed */
 
 .about-highlight-icon,
 .highlight-icon {
@@ -1041,11 +1029,7 @@ p {
   transition: border-color var(--tr-slow), transform var(--tr-slow), box-shadow var(--tr-slow);
 }
 
-.timeline-card:hover {
-  border-color: var(--clr-cyan-glow);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-glow);
-}
+/* Hover effects removed */
 
 .timeline-date {
   color: var(--clr-cyan);
@@ -1138,11 +1122,7 @@ p {
 }
 
 /* Hover effects */
-.skills-bento-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--theme-color);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04), 0 0 25px var(--theme-glow);
-}
+/* Hover effects removed */
 
 .skills-card-header {
   position: relative;
@@ -1165,9 +1145,7 @@ p {
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.skills-bento-card:hover .skills-icon-badge {
-  transform: scale(1.1) rotate(6deg);
-}
+/* Hover effects removed */
 
 .skills-card-tag {
   font-size: 11px;
@@ -1329,11 +1307,7 @@ p {
   z-index: 0;
 }
 
-.experience-card:hover {
-  border-color: var(--clr-cyan-glow);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-glow);
-}
+/* Hover effects removed */
 
 .experience-card > * {
   position: relative;
@@ -1423,11 +1397,7 @@ p {
   position: relative;
 }
 
-.cert-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.08);
-  border-color: rgba(37, 99, 235, 0.15);
-}
+/* Hover effects removed */
 
 .cert-media-preview {
   width: 100%;
@@ -1444,9 +1414,7 @@ p {
   transition: transform 0.6s var(--ease-smooth);
 }
 
-.cert-card:hover .cert-media-preview img {
-  transform: scale(1.06);
-}
+/* Hover effects removed */
 
 .cert-accent-line {
   height: 4px;
@@ -1456,9 +1424,7 @@ p {
   transform-origin: left;
 }
 
-.cert-card:hover .cert-accent-line {
-  transform: scaleY(1.5);
-}
+/* Hover effects removed */
 
 .cert-card-content {
   padding: var(--space-6);
@@ -1500,23 +1466,25 @@ p {
   gap: var(--space-2);
   font-size: var(--fs-sm);
   font-weight: 600;
-  color: #475569;
-  transition: color var(--tr-fast);
+  color: #ffffff !important;
+  background: var(--accent-color, #2563EB);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: opacity 0.2s ease, filter 0.2s ease;
   align-self: flex-start;
-  margin-top: auto;
+  margin-top: var(--space-4);
   text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .cert-verify-link:hover {
-  color: var(--accent-color, #2563EB);
+  filter: brightness(0.9);
+  color: #ffffff !important;
 }
 
 .cert-verify-link svg {
-  transition: transform var(--tr-fast);
-}
-
-.cert-verify-link:hover svg {
-  transform: translate(2px, -2px);
+  transition: none;
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -1539,10 +1507,7 @@ p {
   transition: border-color var(--tr-slow), box-shadow var(--tr-slow);
 }
 
-.resume-card:hover {
-  border-color: var(--clr-cyan-glow);
-  box-shadow: var(--shadow-glow);
-}
+/* Hover effects removed */
 
 .resume-preview {
   width: 200px;
@@ -1562,9 +1527,7 @@ p {
   transition: border-color var(--tr-base);
 }
 
-.resume-card:hover .resume-doc {
-  border-color: var(--clr-cyan-glow);
-}
+/* Hover effects removed */
 
 .resume-doc-header {
   display: flex;
@@ -1683,18 +1646,7 @@ p {
   z-index: 2;
 }
 
-.portfolio-card:hover::before {
-  opacity: 1;
-}
-
-.portfolio-card:hover {
-  border-color: rgba(91, 143, 163, 0.4);
-  transform: translateY(-10px);
-  box-shadow:
-    0 20px 60px rgba(91, 143, 163, 0.12),
-    0 8px 24px rgba(0, 0, 0, 0.06),
-    0 0 0 1px rgba(91, 143, 163, 0.08);
-}
+/* Hover effects removed */
 
 .portfolio-image-wrapper {
   overflow: hidden;
@@ -1722,10 +1674,7 @@ p {
   filter: brightness(0.95) contrast(1.02);
 }
 
-.portfolio-card:hover .portfolio-image {
-  transform: scale(1.06);
-  filter: brightness(1) contrast(1.05);
-}
+/* Hover effects removed */
 
 .portfolio-content {
   padding: 28px 28px 24px;
@@ -1795,11 +1744,7 @@ p {
   box-shadow: 0 4px 16px rgba(119, 136, 153, 0.05);
 }
 
-.reference-card:hover {
-  border-color: rgba(91, 143, 163, 0.5);
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(91, 143, 163, 0.12);
-}
+/* Hover effects removed */
 
 .reference-card-header {
   display: flex;
@@ -3307,6 +3252,52 @@ p {
   max-width: 650px;
   margin: 0 auto;
   width: 100%;
+}
+
+/* ── Featured Portfolio Video Styles ── */
+.portfolio-featured-card {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: stretch;
+}
+
+.portfolio-video-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 320px;
+  background: #000000;
+  border-right: 1px solid rgba(174, 198, 207, 0.15);
+}
+
+.portfolio-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1024px) {
+  .portfolio-featured-card {
+    grid-column: span 2;
+    grid-template-columns: 1fr;
+  }
+  .portfolio-video-wrapper {
+    border-right: none;
+    border-bottom: 1px solid rgba(174, 198, 207, 0.15);
+    aspect-ratio: 16/9;
+    height: auto;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-featured-card {
+    grid-column: span 1;
+  }
 }
 
 /* ──────────────────────────────────────────────────────────────
