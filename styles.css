@@ -1223,15 +1223,6 @@ p {
 }
 
 /* Micro-interaction on item hover */
-.skill-item:hover {
-  transform: translateX(4px);
-}
-
-.skill-item:hover .skill-dot {
-  transform: scale(1.4);
-  box-shadow: 0 0 12px var(--theme-color);
-}
-
 .skill-item:hover .skill-name {
   color: var(--clr-text-title);
 }
@@ -1755,7 +1746,6 @@ p {
   background: rgba(91, 143, 163, 0.15);
   border-color: rgba(91, 143, 163, 0.4);
   color: #4A7A8C;
-  transform: translateY(-1px);
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -2047,7 +2037,6 @@ p {
   color: var(--clr-cyan);
   border-color: var(--clr-cyan-glow);
   background: var(--clr-cyan-dim);
-  transform: translateY(-2px);
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -3201,7 +3190,6 @@ p {
 }
 
 .btn-banner-download:hover {
-  transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -3224,7 +3212,6 @@ p {
 .btn-banner-contact:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: #ffffff;
-  transform: translateY(-2px);
 }
 
 @media (max-width: 991px) {
@@ -3254,7 +3241,6 @@ p {
 }
 
 .btn-hero-resume:hover {
-  transform: translateY(-3px);
   background-color: #3d4f58;
   box-shadow: 0 8px 24px rgba(47, 62, 70, 0.25);
 }
@@ -3278,7 +3264,6 @@ p {
 }
 
 .btn-hero-contact:hover {
-  transform: translateY(-3px);
   background-color: #f8f9fa;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
