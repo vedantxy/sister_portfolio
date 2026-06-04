@@ -2938,15 +2938,17 @@ p {
   *,
   *::before,
   *::after {
-    background: white !important;
-    color: black !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
 
   body {
-    font-size: 12pt;
+    background: #F8F8FF !important;
+    color: #2F3E46 !important;
+    font-size: 11pt;
     line-height: 1.4;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .navbar,
@@ -2957,27 +2959,91 @@ p {
   .hero-floating-element,
   .floating-shape,
   .bg-grid-pattern,
-  .bg-gradient-overlay {
+  .bg-gradient-overlay,
+  .section-divider,
+  .hero-buttons,
+  .btn-hero-resume,
+  .btn-hero-contact,
+  .timeline-cert-link,
+  .cert-verify-link,
+  .footer-scroll-top {
     display: none !important;
   }
 
   .section {
-    padding: 20px 0;
+    padding: 15px 0;
+    page-break-inside: auto;
+  }
+  
+  .hero-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
     page-break-inside: avoid;
+    text-align: left !important;
+  }
+
+  .hero-content {
+    flex: 1 !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .hero-image-wrapper {
+    display: block !important;
+    flex-shrink: 0 !important;
+  }
+
+  .hero-image-container {
+    width: 180px !important;
+    height: 180px !important;
+    border: 3px solid #8FA6B2 !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+  }
+
+  .hero-image-container::before,
+  .hero-image-container::after {
+    display: none !important;
+  }
+
+  .hero-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
   }
 
   .glass-card,
-  .glass-card-sm {
-    border: 1px solid #ccc;
-    backdrop-filter: none;
+  .glass-card-sm,
+  .about-highlight-card,
+  .skills-bento-card,
+  .timeline-card,
+  .experience-card,
+  .cert-card,
+  .reference-card,
+  .contact-details-card {
+    border: 1px solid rgba(47, 62, 70, 0.15) !important;
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 15px !important;
   }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-    font-size: 0.8em;
-    color: #666;
+  h1, h2, h3, h4 {
+    color: #2F3E46 !important;
+    page-break-after: avoid !important;
+  }
+
+  a {
+    color: #5B8FA3 !important;
+    text-decoration: underline !important;
   }
 }
+
 
 /* ──────────────────────────────────────────────────────────────
    28. ACCESSIBILITY — Reduced Motion
